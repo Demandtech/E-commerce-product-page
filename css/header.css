@@ -216,6 +216,7 @@
         padding: 10px 20px;
         border-bottom: none;
         align-items: center;
+        z-index: 100000;
     }
 
     .nav-bg{
