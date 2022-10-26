@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!-- header css file -->
+  <link rel="stylesheet" href="./css/header.css">
+  <!-- Main css fils -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header>
+        <div class="header-container">
+              <nav class="navbar">
+                    <div class="hamburger-open">
+                        <img class="menu-icon" src="./images/icon-menu.svg" alt="hambuger">
+                    </div>
+                    <div class="logo">
+                          <img src="./images/logo.svg" alt="logo">
+                    </div>
+                    <div class="nav-bg">
+                        
+                    <ul class="nav-list">
+                        <div class="hamburger-close">
+                             <img class="icon-close" src="./images/icon-close.svg" alt="">
+                        </div>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="user">
+                         <div class="cart">
+                            <img src="./images/icon-cart.svg" alt="icon-cart">
+                            <div class="cart-notification">
+                                3
+                            </div>
+                         </div>
+                         <div class="avatar">
+                            <img src="./images/image-avatar.png" alt="displays avatar">
+                         </div>
+                         <div class="basket">
+                             <h5>Cart</h5>
+                             <div class="basket-content">
+                                 <!-- <div class="new-order">
+                                    <span style="display: none;">Basket is empty</span>
+                                    <div class="order-wrapper">
+                                        <div class="order">
+                                                <img class="order-tumbnail" src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+                                                <div>
+                                                    <p class="name">Fall Limited Edition Sneakers</p>
+                                                    <p class="total-price">$125.00 x 3 <strong>$375.00</strong></p>
+                                                </div>
+                                                <img class="delete-icon" src="./images/icon-delete.svg" alt="">
+                                        </div>
+                                        <button class="checkout-btn">
+                                                checkout
+                                        </button>
+                                    </div>
+                                 </div> -->
+                                 <!-- <div class="empty-cart">
+                                      <p>Your cart is empty</p>
+                                 </div> -->
+                             </div>
+                             
+                         </div>
+                    </div>
+              </nav>
+        </div>
+  </header>
+  <main>
+      <div class="main-container">
+          <div class="left-wrapper">
+              <div class="product-images-container">
+                  
+                  <div class="product-img-wrapper">
+                       <div class="navigation">
+                             <div class="nav-prev">
+                                  <svg class="prev" width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                             </div>
+                             <div class="nav-next">
+                                  <svg class="next" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                             </div>
+                       </div>
+                       <div class="product-image-slide slide-1">
+                            <img class="image-product-1 product-img" src="./images/image-product-1.jpg" alt="image-product-1">
+                       </div>
+                       <div class="product-image-slide slide-2">
+                            <img class="image-product-2 product-img" src="./images/image-product-2.jpg" alt="image-product-2">
+                       </div>
+                       <div class="product-image-slide slide-3">
+                            <img class="image-product-3 product-img" src="./images/image-product-3.jpg" alt="image-product-3">
+                       </div>
+                       <div class="product-image-slide slide-4">
+                            <img class="image-product-4 product-img" src="./images/image-product-4.jpg" alt="image-product-4">     
+                       </div>
+                  </div>
+                  <div class="product-tumbnails">
+                       <div class="thumbnail" >
+                            <img class="thumbnail-img" data-slide="0" src="./images/image-product-1-thumbnail.jpg" alt="product-thumbnails">
+                       </div>
+                       <div class="thumbnail" >
+                           <img class="thumbnail-img" data-slide="1" src="./images/image-product-2-thumbnail.jpg" alt="product-thumbnails">
+                        
+                       </div>
+                       <div class="thumbnail" >
+                           <img class="thumbnail-img" data-slide="2" src="./images/image-product-3-thumbnail.jpg" alt="product-thumbnails">
+                        
+                       </div>
+                       <div class="thumbnail">
+                        
+                           <img class="thumbnail-img"  data-slide="3" src="./images/image-product-4-thumbnail.jpg" alt="product-thumbnails">
+                       </div>
+                       
+                  </div>
+              </div>
+          </div>
+          <div class="right-wrapper">
+                <div class="product-details-container">
+                     <h3 class="company-name">Sneaker Company</h3>
+                     <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+                     <p class="about-product"> These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                         <div class="product-prices">
+                                <h2 class="current-price"> $125.00 <span class="discount">50%</span></h2>
+                                <p class="old-price">$250.00</p>
+                         </div>
+                      <div class="btns">
+                           <div class="controls-btn">
+                              
+                               <div class="minus">
+                                     <svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use class="minus-icon"  fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>   
+                                </div>
+                               <div class="cart-count">
+                                    <p class="counter">0</p>
+                               </div>
+                                <div class="plus">
+                                    <svg class="plus-icon" width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use class="plus-icon"  fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+                               </div>
+                        
+                          </div>
+                           <div class="addtocart">
+                                <button class="add-cart"> 
+                                    <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+                                    Add to cart
+                                </button>
+                            </div>
+                          
+                      </div>
+                </div>
+          </div>
+      </div>
+
+      
+  </main>
+  <div class="product-modal">
+       <div class="modal-images-container">
+            
+            <div class="modal-images-wrapper">
+                 <div class="modal-img-wrapper">
+                       <div class="modal-navigation">
+                             <div class="modal-nav-prev">
+                                  <svg class="modalPrev" width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path class="modalPrev" d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                             </div>
+                             <div class="modal-nav-next">
+                                  <svg class="modalNext" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path class="modalNext" d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                             </div>
+                       </div>
+                       <div class="modal-image-slide slide-1">
+                            <img class="image-product-1 product-img" src="./images/image-product-1.jpg" alt="image-product-1">
+                       </div>
+                       <div class="modal-image-slide slide-2">
+                            <img class="image-product-2 product-img" src="./images/image-product-2.jpg" alt="image-product-2">
+                       </div>
+                       <div class="modal-image-slide slide-3">
+                            <img class="image-product-3 product-img" src="./images/image-product-3.jpg" alt="image-product-3">
+                       </div>
+                       <div class="modal-image-slide slide-4">
+                            <img class="image-product-4 product-img" src="./images/image-product-4.jpg" alt="image-product-4">     
+                       </div>
+                 </div>
+                 <div class="modal-product-tumbnails">
+                       <div class="modal-thumbnail">
+                           <img class="modal-thumbnail-img" data-slide="0" src="./images/image-product-1-thumbnail.jpg" alt="product-thumbnails">
+                       </div>
+                       <div class="modal-thumbnail">
+                           <img class="modal-thumbnail-img" data-slide="1"  src="./images/image-product-1-thumbnail.jpg" alt="product-thumbnails">
+                        
+                       </div>
+                       <div class="modal-thumbnail">
+                           <img class="modal-thumbnail-img" data-slide="2" src="./images/image-product-2-thumbnail.jpg" alt="product-thumbnails">
+                        
+                       </div>
+                       <div class="modal-thumbnail">
+                        
+                           <img class="modal-thumbnail-img" data-slide="3"  src="./images/image-product-3-thumbnail.jpg" alt="product-thumbnails">
+                       </div>
+                       
+                  </div>
+            </div>
+            
+            <div class="modal-close">
+                 <svg class="close" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#ffffff" fill-rule="evenodd"/></svg>
+            </div> 
+       </div> 
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Demand</a>.
+  </div>
+    <script src="./header.js"></script>
+    <script src ='./main.js'></script>
+</body>
+</html>
