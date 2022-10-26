@@ -186,6 +186,16 @@
     cursor: pointer;
 }
 
+@media(max-width: 769px){
+    .header-container{
+        width: 100%;
+        padding: 0 10px;
+    }
+   .navbar{
+    width: 100%;
+   } 
+}
+
 @media (max-width: 426px) {
     .hamburger-open,
     .hamburger-close {
